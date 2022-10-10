@@ -2,7 +2,8 @@
 <img src="https://cdn-icons-png.flaticon.com/512/2179/2179254.png" alt="drawing" width="400"/>
 
 # Sobre
-Recebe um arquivo CSV e retorna outro acrescentando colunas com as coordendas geográficas (Latitude e Longitude). Também há a plotagem das localizações em mapa dinãmico.
+Recebe um arquivo CSV e retorna outro acrescentando colunas com as coordendas geográficas (Latitude e Longitude). Também há a plotagem das localizações em mapa dinãmico. 
+Obs.: Os dados aqui presentes foram obtidos via site gerador de dados fake.
 
 Status do projeto: :heavy_check_mark: Concluído
 
@@ -38,7 +39,7 @@ Para conseguir rodar todo o programa, verifique se os seguintes pacotes já est�
 - [Geopy](https://pypi.org/project/geopy)
 - [Plotly](https://plotly.com/python)
 
-# Pré-requisitos
+# Mapa Plotly
 Como exemplo de mapa gerado a partir desse projeto, deixo aqui um print:
 
 <img src="Mapa.png" alt="Mapa"/>
