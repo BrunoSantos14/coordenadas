@@ -13,6 +13,8 @@ Status do projeto: :heavy_check_mark: Concluído
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
+:small_blue_diamond: [Mapa Plotly](#mapa-plotly)
+
 :small_blue_diamond: [Autor](#autor)
 
 :small_blue_diamond: [Contribuições futuras](#contribuições-futuras)
@@ -35,6 +37,11 @@ Para conseguir rodar todo o programa, verifique se os seguintes pacotes já est�
 - [Re](https://docs.python.org/3/library/re.html)
 - [Geopy](https://pypi.org/project/geopy)
 - [Plotly](https://plotly.com/python)
+
+# Pré-requisitos
+Como exemplo de mapa gerado a partir desse projeto, deixo aqui um print:
+
+<img src="Mapa.png" alt="Mapa"/>
 
 # Autor
 
