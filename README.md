@@ -2,7 +2,7 @@
 <img src="https://cdn-icons-png.flaticon.com/512/2179/2179254.png" alt="drawing" width="400"/>
 
 # Sobre
-Recebe um arquivo CSV e retorna outro acrescentando colunas com as coordendas geográficas (Latitude e Longitude). Também há a plotagem das localizações em mapa dinãmico. 
+Recebe um arquivo CSV e retorna outro acrescentando colunas com as coordendas geográficas (Latitude e Longitude). Também há a plotagem das localizações em mapa dinâmico. 
 Obs.: Os dados aqui presentes foram obtidos via site gerador de dados fake.
 
 Status do projeto: :heavy_check_mark: Concluído
@@ -26,7 +26,7 @@ Obter as coordenadas geográficas a partir de endereços disponibilizados em uma
 # Principais características
 - Tratamento da coluna informando cep para deixar em formato padronizado do Brasil (xxxxx-xxx);
 - Caso o endereço não seja encontrado (pode ocorrer por erro de digitação no cadastro rua, por exemplo), as colunas de "Latitude" e "Longitude" recebem o texto "Erro";
-- O programa calcula o tempo de execução. Por meio de testes, vimos que uma requisição para uma localidade demora entre 0.6 a 1.1 segundo para encontrar suas coordenadas geográficas. Se tratando uma base de dados grande, esse código pode se tornar lento;
+- O programa calcula o tempo de execução. Por meio de testes, vimos que uma requisição para uma localidade demora entre 0.6 a 1.1 segundo para encontrar suas coordenadas geográficas. Se tratando de uma base de dados grande, esse código pode se tornar lento;
 - É possível encontrar endereços internacionais. É aconselhável não informar a coluna de cep (código postal) nesses casos e acrescentar a coluna de país na requisição;
 
 # Pré-requisitos
