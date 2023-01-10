@@ -2,7 +2,7 @@
 <img src="https://cdn-icons-png.flaticon.com/512/2179/2179254.png" alt="drawing" width="400"/>
 
 # About
-This code read a CVS file and return another one adding columns with geographic coordinates (Latitude and Longitude). Also there's a dinamic map plot by plotly. 
+This code read a CVS file and return another one adding columns with geographic coordinates (Latitude and Longitude). Also there's a dinamic map ploted by plotly. 
 Obs.: The dataset was obtainded by a fake data generator website.
 
 Project status: :heavy_check_mark: Concluded
