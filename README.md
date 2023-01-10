@@ -1,36 +1,36 @@
-# Coordenadas
+# Coordinates
 <img src="https://cdn-icons-png.flaticon.com/512/2179/2179254.png" alt="drawing" width="400"/>
 
-# Sobre
-Recebe um arquivo CSV e retorna outro acrescentando colunas com as coordendas geográficas (Latitude e Longitude). Também há a plotagem das localizações em mapa dinâmico. 
-Obs.: Os dados aqui presentes foram obtidos via site gerador de dados fake.
+# About
+This code read a CVS file and return another one adding columns with geographic coordinates (Latitude and Longitude). Also there's a dinamic map plot by plotly. 
+Obs.: The dataset was obtainded by a fake data generator website.
 
-Status do projeto: :heavy_check_mark: Concluído
+Project status: :heavy_check_mark: Concluded
 
-# Índice
-:small_blue_diamond: [Desafios](#desafios)
+# Index
+:small_blue_diamond: [Challenge](#challenge)
 
-:small_blue_diamond: [Principais características](#principais-características)
+:small_blue_diamond: [Features](#features)
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+:small_blue_diamond: [Prerequisites](#prerequisites)
 
-:small_blue_diamond: [Mapa Plotly](#mapa-plotly)
+:small_blue_diamond: [Plotly Map](#plotly-map)
 
-:small_blue_diamond: [Autor](#autor)
+:small_blue_diamond: [Author](#author)
 
-:small_blue_diamond: [Contribuições futuras](#contribuições-futuras)
+:small_blue_diamond: [Contributions](#contributions)
 
-# Desafios
-Obter as coordenadas geográficas a partir de endereços disponibilizados em uma base de dados. O intuito é conseguir identificar a localização exata de pessoas ou ornanizações em um mapa. Este projeto termina com esta devida plotagem usando códigos em Python, mas pode ser interessante esta visualização em algum outro software, como o Power BI que permite a criação de Tooltips de forma dinâmica.
+# Challenge
+Obtain geographic coordinates of people or companies descripted on a dataset. This code return Latitude and Longitude for each line of data, providing the visualization of them on a map. Here I used Plotly to show how to create a map on Python, but maybe it's more interesting to create on another softwer, like Power BI, that allows more creativity and possibility to create personalized tooltips. 
 
-# Principais características
-- Tratamento da coluna informando cep para deixar em formato padronizado do Brasil (xxxxx-xxx);
-- Caso o endereço não seja encontrado (pode ocorrer por erro de digitação no cadastro rua, por exemplo), as colunas de "Latitude" e "Longitude" recebem o texto "Erro";
-- O programa calcula o tempo de execução. Por meio de testes, vimos que uma requisição para uma localidade demora entre 0.6 a 1.1 segundo para encontrar suas coordenadas geográficas. Se tratando de uma base de dados grande, esse código pode se tornar lento;
-- É possível encontrar endereços internacionais. É aconselhável não informar a coluna de cep (código postal) nesses casos e acrescentar a coluna de país na requisição;
+# Features
+- Because dataset contain adresses from Brazil, we treated the zip code (CEP) column to leave it in a standardized format (xxxxx-xxx);
+- If the API can not find the geographic coordinates (because of a type error on a column for example), returns the string "Erro"; 
+- This project calculate the time of execution. By experimentation, a unique requisition takes between 0.6 and 1.1 seconds, also depending on computation capacity. On a large dataset, this code can take a long time;
+- It's possible to get the geographic coordinates of others countrys!
 
-# Pré-requisitos
-Para conseguir rodar todo o programa, verifique se os seguintes pacotes já estão instalados na sua máquina:
+# Prerequisites
+Librarys required in this project:
 
 - [Pandas](https://pandas.pydata.org/)
 - [Requests](https://requests.readthedocs.io/en/latest/)
@@ -39,14 +39,14 @@ Para conseguir rodar todo o programa, verifique se os seguintes pacotes já est�
 - [Geopy](https://pypi.org/project/geopy)
 - [Plotly](https://plotly.com/python)
 
-# Mapa Plotly
-Como exemplo de mapa gerado a partir desse projeto, deixo aqui um print:
+# Plotly Map
+As example, take this screenshot of a map created under these codes:
 
 <img src="Mapa.png" alt="Mapa"/>
 
-# Autor
+# Author
 
 [<img src="https://avatars.githubusercontent.com/u/109088916?s=400&u=0128dd8ac18d3e18783c4f52c5bb89578f12311f&v=4" width=115><br><sub>Bruno Cavalcanti Santos</sub>](https://github.com/BrunoSantos14)
     
-# Contribuições futuras
-Qualquer dúvida ou ideias para melhorias do projeto, podem me contactar por email: bruno.canti.santos@gmail.com
+# Contributions
+Any doubts or ideas to develop this project you can contact me on email: bruno.canti.santos@gmail.com
